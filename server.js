@@ -1,6 +1,9 @@
 const express = require('express');
 const request = require('request');
 const fs = require('fs');
+
+const port=process.env.PORT || 3000;
+
 var app = express();
 
 
@@ -55,4 +58,4 @@ app.get('/projects',(req,res) => {
 
 
 
-app.listen(3000);
+app.listen(port);
